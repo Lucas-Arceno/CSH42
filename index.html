@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Blog com vídeos do YouTube e descrições acessíveis"
+    />
+    <link rel="stylesheet" href="main.css">
+    
+    <title>Blog de Vídeos</title>
+    
+  </head>
+  <body>
+    <header>
+      <h1>CSH42</h1>
+      <nav aria-label="Menu Principal">
+        <a href="index.html">Conteúdo</a>
+        <a href="glossary.html">Glossário</a>
+        <a href="#participantes">Participantes</a>
+        <a href="#feedback">Feedback</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <h2>Bem-vindo</h2>
+      <p>Explore nossos tutoriais sobre produção de músicas.</p>
+
+      <section aria-labelledby="video1">
+        <article>
+          <h3 id="video1">Instalação do FL STUDIO</h3>
+          <p>Faça o donwload do <a href="https://www.image-line.com/fl-studio-download/">FL Studio</a> para o seu sistema operacional;</p>
+          <p>Inicie o processo de instalação do software, clicar no botão next, e ao final em finish;</p>
+          <p>Após isso abra o software para ser usado.</p>
+          <iframe
+            src="https://www.youtube.com/embed/i1HLAXItQ3M?si=f15rKLtq5qBipJBq"
+            title="Vídeo 1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+        </article>
+      </section>
+    </main>
+
+    <aside id="participantes">
+      <h2>Participantes</h2>
+      <p>Bruno Rafael de Almeida<br />Ian Fenato da Silva Cordeiro<br />Lucas Arceno de Lima<br />Pedro Morais Mendes<br />Thiago A. Oliveira</p>
+    </aside>
+
+    <footer id="feedback">
+      <h2>Feedback</h2>
+      <p>Deixe-nos sua opinião! Sua sugestão é muito importante para nós.</p>
+      <form action="#" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </footer>
+  </body>
+</html>
