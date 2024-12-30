@@ -8,9 +8,13 @@
       content="Blog com vídeos do YouTube e descrições acessíveis"
     />
     <link rel="stylesheet" href="main.css">
-    
     <title>Blog de Vídeos</title>
-    
+    <script>
+      function toggleDescription(id) {
+        const desc = document.getElementById(id);
+        desc.style.display = desc.style.display === "none" || desc.style.display === "" ? "block" : "none";
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -30,16 +34,18 @@
       <section aria-labelledby="video1">
         <article>
           <h3 id="video1">Instalação do FL STUDIO</h3>
-          <p>Faça o donwload do <a href="https://www.image-line.com/fl-studio-download/">FL Studio</a> para o seu sistema operacional;</p>
-          <p>Inicie o processo de instalação do software, clicar no botão next, e ao final em finish;</p>
-          <p>Após isso abra o software para ser usado.</p>
+          <button class="toggle-btn" onclick="toggleDescription('desc-video1')">Mostrar descrição</button>
+          <div id="desc-video1" class="description">
+            <p>Faça o download do <a href="https://www.image-line.com/fl-studio-download/">FL Studio</a> para o seu sistema operacional;</p>
+            <p>Inicie o processo de instalação do software, clicando no botão next, e ao final em finish;</p>
+            <p>Após isso, abra o software para ser usado.</p>
+          </div>
           <iframe
             src="https://www.youtube.com/embed/i1HLAXItQ3M?si=f15rKLtq5qBipJBq"
             title="Vídeo 1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          >
-          </iframe>
+          ></iframe>
         </article>
       </section>
     </main>
