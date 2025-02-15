@@ -142,3 +142,12 @@ footer button:hover {
 footer p {
   margin-top: 1rem;
 }
+a {
+  color: rgb(109, 216, 243) !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
