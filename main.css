@@ -151,3 +151,32 @@ img {
   height: auto;
   display: block;
 }
+
+.menu-toggle {
+  display: none; /* Esconde o botão em telas grandes */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Mostra o botão em telas menores */
+  }
+
+  header nav {
+    display: none; /* Esconde o menu em telas menores */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  header nav.active {
+    display: flex; /* Mostra o menu quando a classe active é adicionada */
+  }
+
+  header nav a {
+    margin: 0.5rem 0; /* Ajusta o espaçamento dos links */
+  }
+}
